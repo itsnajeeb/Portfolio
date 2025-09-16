@@ -1,11 +1,12 @@
 // Projects.jsx
 import { motion } from "framer-motion";
-import project1 from "../assets/project1.jpg";
+import thumbnail1 from "../assets/project1.jpg";
+import thumbnail2 from "../assets/project_thumbnail_2.png";
 
 const projects = [
   {
     id: 1,
-    image: project1,
+    image: thumbnail1,
     title: "E-LEARNING",
     description:
       "A modern and responsive portfolio built with React, TailwindCSS, and Framer Motion to showcase my skills and projects.",
@@ -16,7 +17,7 @@ const projects = [
 
   {
     id: 2,
-    image: project1,
+    image: thumbnail2,
     title: "QuickPaste",
     description:
       "A lightweight web app for creating, editing, and managing text snippets with persistent storage and a clean, React + Tailwind powered interface.",
