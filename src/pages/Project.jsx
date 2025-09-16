@@ -32,8 +32,8 @@ const projects = [
     description:
       "A lightweight web app for creating, editing, and managing text snippets with persistent storage and a clean, React + Tailwind powered interface.",
     tech: ["React", "TailwindCSS", "MongoDB"],
-    demo: "#",
-    github: "#",
+    demo: "https://lms-host-c8ig.onrender.com/",
+    github: "https://github.com/itsnajeeb/LMS",
   },
 ];
 
