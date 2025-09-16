@@ -1,7 +1,6 @@
 // Projects.jsx
 import { motion } from "framer-motion";
 import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project1.png";
 
 const projects = [
   {
@@ -14,10 +13,10 @@ const projects = [
     demo: "https://lms-host-c8ig.onrender.com/",
     github: "https://github.com/itsnajeeb/LMS",
   },
-  
+
   {
     id: 2,
-    image: project2,
+    image: project1,
     title: "QuickPaste",
     description:
       "A lightweight web app for creating, editing, and managing text snippets with persistent storage and a clean, React + Tailwind powered interface.",
