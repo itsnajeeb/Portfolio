@@ -1,8 +1,7 @@
 // Projects.jsx
 import { motion } from "framer-motion";
-import project1 from "../assets/project1.jpg"; 
-import project2 from "../assets/project2.png";
-import project3 from "../assets/project1.jpg";
+import project1 from "../assets/project1.jpg";
+import project2 from "../assets/project1.png";
 
 const projects = [
   {
@@ -15,25 +14,16 @@ const projects = [
     demo: "https://lms-host-c8ig.onrender.com/",
     github: "https://github.com/itsnajeeb/LMS",
   },
-  // {
-  //   id: 2,
-  //   image: project2,
-  //   title: "E-Commerce Platform",
-  //   description:
-  //     "Full-stack MERN e-commerce app with authentication, cart, and payment gateway integration.",
-  //   tech: ["MongoDB", "Express", "React", "Node.js"],
-  //   demo: "#",
-  //   github: "#",
-  // },
+  
   {
-    id: 3,
-    image: project3,
+    id: 2,
+    image: project2,
     title: "QuickPaste",
     description:
       "A lightweight web app for creating, editing, and managing text snippets with persistent storage and a clean, React + Tailwind powered interface.",
     tech: ["React", "TailwindCSS", "MongoDB"],
-    demo: "https://lms-host-c8ig.onrender.com/",
-    github: "https://github.com/itsnajeeb/LMS",
+    demo: "https://quickpaste.onrender.com/",
+    github: "https://github.com/itsnajeeb/PasteApp",
   },
 ];
 
