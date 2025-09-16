@@ -15,23 +15,23 @@ const projects = [
     demo: "#",
     github: "#",
   },
-  {
-    id: 2,
-    image: project2,
-    title: "E-Commerce Platform",
-    description:
-      "Full-stack MERN e-commerce app with authentication, cart, and payment gateway integration.",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
-    demo: "#",
-    github: "#",
-  },
+  // {
+  //   id: 2,
+  //   image: project2,
+  //   title: "E-Commerce Platform",
+  //   description:
+  //     "Full-stack MERN e-commerce app with authentication, cart, and payment gateway integration.",
+  //   tech: ["MongoDB", "Express", "React", "Node.js"],
+  //   demo: "#",
+  //   github: "#",
+  // },
   {
     id: 3,
     image: project3,
-    title: "Blog Application",
+    title: "QuickPaste",
     description:
-      "A Next.js blog with Markdown support, dynamic routing, and a clean responsive UI.",
-    tech: ["Next.js", "TailwindCSS", "MongoDB"],
+      "A lightweight web app for creating, editing, and managing text snippets with persistent storage and a clean, React + Tailwind powered interface.",
+    tech: ["React", "TailwindCSS", "MongoDB"],
     demo: "#",
     github: "#",
   },
