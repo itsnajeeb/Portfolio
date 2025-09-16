@@ -12,8 +12,8 @@ const projects = [
     description:
       "A modern and responsive portfolio built with React, TailwindCSS, and Framer Motion to showcase my skills and projects.",
     tech: ["React", "TailwindCSS", "Framer Motion"],
-    demo: "#",
-    github: "#",
+    demo: "https://lms-host-c8ig.onrender.com/",
+    github: "https://github.com/itsnajeeb/LMS",
   },
   // {
   //   id: 2,
