@@ -11,7 +11,6 @@ export default function Contact() {
         phone: '',
         message: ''
     })
-    console.log(formData);
     
     const handleChange = e => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
