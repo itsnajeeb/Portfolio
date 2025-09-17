@@ -7,12 +7,14 @@ import Swal from "sweetalert2";
 export default function Contact() {
     const [formData, setFormData] = useState({
         name: '',
-        phone: '',
         email: '',
+        phone: '',
         message: ''
     })
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.value]: e.target.value })
+    console.log(formData);
+    
+    const handleChange = e => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     }
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -27,7 +29,7 @@ export default function Contact() {
             }
         });
         try {
-            const response = await fetch('iamnajeebjung@gmail.com', {
+            const response = await fetch('http://localhost:5000/send-email', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)
@@ -99,12 +101,14 @@ export default function Contact() {
                     className="backdrop-blur-lg bg-white/10 border border-white/20 p-8 rounded-2xl shadow-lg"
                 >
                     <h2 className="text-3xl font-bold text-white mb-6">Let’s Work Together</h2>
-                    <form className="space-y-5">
+                    <form className="space-y-5" onSubmit={handleSubmit}>
                         <div>
                             <label className="block text-sm text-gray-300">Name</label>
                             <input
                                 type="text"
+                                name="name"
                                 placeholder="Your Name"
+                                value={formData.name}
                                 onChange={handleChange}
                                 className="w-full mt-2 px-4 py-3 rounded-xl bg-slate-900/70 text-white border border-slate-700 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                             />
@@ -113,17 +117,21 @@ export default function Contact() {
                             <label className="block text-sm text-gray-300">Email</label>
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="Your Email"
                                 onChange={handleChange}
+                                value={formData.email}
                                 className="w-full mt-2 px-4 py-3 rounded-xl bg-slate-900/70 text-white border border-slate-700 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                             />
                         </div>
                         <div>
-                            <label className="block text-sm text-gray-300">Email</label>
+                            <label className="block text-sm text-gray-300">Contact No</label>
                             <input
                                 type="number"
+                                name="phone"
                                 placeholder="Your Contact No"
                                 onChange={handleChange}
+                                value={formData.phone}
                                 className="w-full mt-2 px-4 py-3 rounded-xl bg-slate-900/70 text-white border border-slate-700 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                             />
                         </div>
@@ -131,12 +139,14 @@ export default function Contact() {
                             <label className="block text-sm text-gray-300">Message</label>
                             <textarea
                                 rows="4"
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
                                 placeholder="Tell me about your project..."
                                 className="w-full mt-2 px-4 py-3 rounded-xl bg-slate-900/70 text-white border border-slate-700 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                             />
                         </div>
                         <motion.button
-                            onClick={handleSubmit}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="w-full py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold shadow-md transition"
