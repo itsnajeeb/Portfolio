@@ -29,7 +29,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="bg-slate-950 text-white py-16">
+    <section id="projects" className="bg-slate-950 text-white py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         {/* Heading */}
         <motion.h2

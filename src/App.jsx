@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './components/Navbar'
+import Contact from './pages/Contact'
 import Education from './pages/Education'
 import Experience from './pages/Experience'
 import Footer from './pages/Footer'
@@ -17,6 +18,7 @@ function App() {
       <Education />
       <Experience />
       <Projects />
+      <Contact/>
       <Footer />
     </>
   )

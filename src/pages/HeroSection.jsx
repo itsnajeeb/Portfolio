@@ -21,7 +21,7 @@ export default function Hero() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col-reverse lg:flex-row items-center gap-12">
-        
+
         {/* Left Content */}
         <div className="flex-1 text-center lg:text-left space-y-6">
           <motion.h3
@@ -51,8 +51,8 @@ export default function Hero() {
             animate="visible"
             custom={2}
           >
-            I am a passionate web developer specializing in building modern, 
-            responsive, and user-friendly websites. My focus is on crafting 
+            I am a passionate web developer specializing in building modern,
+            responsive, and user-friendly websites. My focus is on crafting
             clean interfaces and smooth user experiences.
           </motion.p>
 
@@ -85,8 +85,9 @@ export default function Hero() {
       {/* Blinking Arrow Button */}
       <motion.div
         className="absolute  bottom-11 left-1/2 transform -translate-x-1/2 cursor-pointer"
-        animate={{ opacity: [1, 0.3, 1] }}
-        transition={{ repeat: Infinity, duration: 1.5 }}
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3 }}
+      
       >
         <img src={arrowImg} alt="Scroll Down" className="w-16 md:w-20 lg:w-24 relative top-10" />
       </motion.div>
